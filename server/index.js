@@ -33,6 +33,10 @@ app.get("/", (req, res) => {
   res.send("Hello World! 기모찌");
 });
 
+app.get("/api/hello", (req, res) => {
+  res.send("안녕하세요");
+});
+
 // 회원가입을 위한 라우트 만들기
 app.post("/api/users/register", async (req, res) => {
   // 회원가입할 때 필요한 정보들을 client에서 가져오면
